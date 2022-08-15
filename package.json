@@ -1,0 +1,36 @@
+{
+  "name": "ez",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/ez.js",
+  "module": "dist/ez.esm.js",
+  "browser": "dist/ez.min.js",
+  "scripts": {
+    "prepare": "npm run build",
+    "build": "rollup -c && tsc --declaration --emitDeclarationOnly --outDir types --rootDir ./src",
+    "dev": "rollup -c -w",
+    "prepublishOnly": "npm run build",
+    "release": "npm publish"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shossk/ez.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shossk/ez/issues"
+  },
+  "homepage": "https://github.com/shossk/ez#readme",
+  "devDependencies": {
+    "@rollup/plugin-alias": "^3.1.9",
+    "@rollup/plugin-commonjs": "^22.0.2",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "@types/web-animations-js": "^2.2.12",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.77.3",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.32.1",
+    "typescript": "^4.7.4"
+  }
+}
