@@ -1,9 +1,10 @@
 {
-  "name": "ez",
+  "name": "ez-anime",
   "version": "1.0.0",
   "description": "",
   "main": "dist/ez.js",
   "module": "dist/ez.esm.js",
+  "jsnext:main": "dist/ez.esm.js",
   "browser": "dist/ez.min.js",
   "scripts": {
     "prepare": "npm run build",
